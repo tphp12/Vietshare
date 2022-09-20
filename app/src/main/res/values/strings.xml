@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Vietcetara</string>
+    <string name="hello">Hello</string>
+    <string name="angle_down">&#xf107;</string>
+    <string name="content">Đáng Tiền: 3 Triệu mua Kindle để trải nghiệm sự gọn gàng của những con chữ</string>
+    <string name="description">Năm 18 tuổi, tôi có cho mình gia tài đầu tiên là một tủ sách to kê ở góc phòng. Đấy là
+        toàn bộ những gì tôi gom nhặt suốt từ khi bắt đầu yêu thích con chữ và sự đọc. Ở đó có từ những cuốn văn học Nga
+        đã cũ ông ngoại để cho đến truyện tranh, sách nghiên cứu.
+    </string>
+    <string name="content1">Tất tần tật về iPhone 14 Pro Max giá bao nhiêu, khi nào ra mắt</string>
+    <string name="description1">Như các thông tin rò rỉ trước đó, hai mẫu iPhone 14 Pro Series được hãng mang đến dòng
+        chip Apple A16 Bionic mới nhất được sản xuất trên tiến trình
+    </string>
+</resources>
