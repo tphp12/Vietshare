@@ -11,4 +11,6 @@
     <string name="description1">Như các thông tin rò rỉ trước đó, hai mẫu iPhone 14 Pro Series được hãng mang đến dòng
         chip Apple A16 Bionic mới nhất được sản xuất trên tiến trình
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
