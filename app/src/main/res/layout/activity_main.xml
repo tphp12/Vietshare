@@ -5,6 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="6dp"
         tools:context=".MainActivity" android:background="@color/white">
 
     <LinearLayout
@@ -15,69 +16,49 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:padding="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="16dp"
             android:id="@+id/menuBottom">
 
         <info.androidhive.fontawesome.FontTextView
                 android:layout_width="wrap_content"
                 android:textColor="@color/green"
                 android:layout_height="wrap_content"
-                android:text="@string/fa_house_damage_solid"
+                android:text="@string/fa_home_solid"
                 android:textSize="26sp"
                 app:solid_icon="true"
-                android:layout_marginRight="40dp"
-                android:paddingTop="14dp" android:paddingLeft="6dp" android:paddingRight="6dp"
-                android:paddingBottom="6dp"/>
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+        />
         <info.androidhive.fontawesome.FontTextView
                 android:layout_width="wrap_content"
                 android:textColor="#777"
                 android:layout_height="wrap_content"
-                android:text="@string/fa_headphones_solid"
+                android:text="@string/fa_book_open_solid"
                 android:textSize="26sp"
                 app:solid_icon="true"
-                android:layout_marginRight="40dp"
-                android:paddingTop="14dp" android:paddingLeft="6dp" android:paddingRight="6dp"
-                android:paddingBottom="6dp"/>
-        <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:textColor="#777"
-                android:layout_height="wrap_content"
-                android:text="@string/fa_tablet_alt_solid"
-                android:textSize="26sp"
-                app:solid_icon="true"
-                android:layout_marginRight="40dp"
-                android:paddingTop="14dp" android:paddingLeft="6dp" android:paddingRight="6dp"
-                android:paddingBottom="6dp"/>
-        <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:textColor="#777"
-                android:layout_height="wrap_content"
-                android:text="@string/fa_bookmark_solid"
-                android:textSize="26sp"
-                app:solid_icon="true"
-                android:layout_marginRight="40dp"
-                android:paddingTop="14dp" android:paddingLeft="6dp" android:paddingRight="6dp"
-                android:paddingBottom="6dp"/>
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+        />
         <info.androidhive.fontawesome.FontTextView
                 android:layout_width="wrap_content"
                 android:textColor="#777"
                 android:id="@+id/userProfile"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/fa_user"
                 android:textSize="26sp"
                 app:solid_icon="true"
-                android:paddingTop="14dp" android:paddingLeft="6dp" android:paddingRight="6dp"
-                android:paddingBottom="6dp"/>
+                android:layout_marginLeft="48dp"
+        />
     </LinearLayout>
 
     <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/white"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/menuBottom"
-            android:layout_marginBottom="56dp"
             android:id="@+id/mainFrame"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
