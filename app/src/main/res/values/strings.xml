@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Vietcetara</string>
+    <string name="app_name">Vietshare</string>
     <string name="hello">Hello</string>
     <string name="angle_down">&#xf107;</string>
     <string name="content">Đáng Tiền: 3 Triệu mua Kindle để trải nghiệm sự gọn gàng của những con chữ</string>
@@ -13,4 +13,5 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">&#xf133;</string>
 </resources>
