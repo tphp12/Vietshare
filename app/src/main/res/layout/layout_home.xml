@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+    <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imgContent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            app:shapeAppearanceOverlay="@style/roundedimageview"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/txtContent" android:textSize="20sp" android:textColor="@color/black"
+              android:textStyle="bold" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"
+              android:textAlignment="viewStart" android:layout_marginTop="8dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/txtDescription" android:textSize="14sp"
+              android:layout_marginLeft="12dp" android:layout_marginRight="12dp"
+              android:textAlignment="viewStart"
+              android:ellipsize="end"
+              android:maxLines="3"
+              android:layout_marginTop="8dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" android:layout_marginTop="8dp"
+    >
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/txtAuthor" android:textSize="14sp" android:textColor="#777"
+                          android:text="Thư Vũ"
+                          android:textStyle="bold"
+                          android:textAlignment="viewStart" android:layout_marginRight="6dp"/>
+                <TextView
+                        android:text="|"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/txtSep"
+                        android:textAlignment="viewStart" android:layout_marginRight="6dp"/>
+                <TextView
+                        android:text="Đời sống công nghệ"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" android:id="@+id/txtTopic"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageView
+                        android:layout_width="30dp"
+                        android:src="@drawable/ic_baseline_bookmark_border_24"
+                        android:layout_height="30dp"
+                        android:text="@string/fa_bookmark"
+                        android:layout_marginRight="2dp"
+
+                        />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/postSeperator"/>
+</LinearLayout>
