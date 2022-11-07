@@ -8,46 +8,42 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import com.example.vietcetara.R;
+import com.example.vietcetara.adapter.PostAdapter;
+import com.example.vietcetara.model.Post;
 import info.androidhive.fontawesome.FontTextView;
 
-public class HomeFragment extends Fragment {
-    ImageView imgLogo;
-    ImageView imgContent;
-    ImageView imgContent1;
-    TextView txtContent;
-    TextView txtDescription;
-    TextView txtContent1;
-    TextView txtDescription1;
+import java.util.ArrayList;
 
-    FontTextView userProfile;
+public class HomeFragment extends Fragment {
+    RecyclerView rvListC;
+    ArrayList<Post> posts;
+    PostAdapter postAdapter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
-        imgLogo = view.findViewById(R.id.mainLogo);
-        imgLogo.setImageResource(R.drawable.main_logo);
 
-        imgContent = view.findViewById(R.id.imgContent);
-        imgContent.setImageResource(R.drawable.kindle);
+        loadData();
+        rvListC = view.findViewById(R.id.rvC);
+        postAdapter = new PostAdapter(posts);
 
-        txtContent = view.findViewById(R.id.txtContent);
-        txtContent.setText(R.string.content);
-
-        txtDescription = view.findViewById(R.id.txtDescription);
-        txtDescription.setText(R.string.description);
-
-        txtContent1 = view.findViewById(R.id.txtContent1);
-        txtContent1.setText(R.string.content1);
-
-        txtDescription1 = view.findViewById(R.id.txtDescription1);
-        txtDescription1.setText(R.string.description1);
-
-        imgContent1 = view.findViewById(R.id.imgContent1);
-        imgContent1.setImageResource(R.drawable.ip14);
-
-        userProfile = view.findViewById(R.id.userProfile);
-        // Inflate the layout for this fragment
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(container.getContext());
+        rvListC.setAdapter(postAdapter);
+        rvListC.setLayoutManager(linearLayoutManager);
         return view;
+    }
+
+    private void loadData() {
+        posts = new ArrayList<>();
+
+        posts.add(new Post("post1.jpeg","Đáng Tiền: 3 Triệu mua Kindle để trải nghiệm sự gọn gàng của những con chữ","Năm 18 tuổi, tôi có cho mình gia tài đầu tiên là một tủ sách to kê ở góc phòng. Đấy là" +
+                    " toàn bộ những gì tôi gom nhặt suốt từ khi bắt đầu yêu thích con chữ và sự đọc. Ở đó có từ những cuốn văn học Nga" +
+                    " đã cũ ông ngoại để cho đến truyện tranh, sách nghiên cứu.","Thư Vũ","SÁCH BÁO"));
+        posts.add(new Post("post0.jpeg","Đánh giá iPhone 14 Pro Max: Sự nâng cấp mạnh mẽ từ thiết kế đến tính năng","Các dòng iPhone 14 Apple ra mắt vào tháng 9.","Duy Luân","CÔNG NGHỆ"));
+        posts.add(new Post("post2.jpeg","Hà Giang Việt Nam lọt top 100 điểm du lịch được đánh giá cao thế giới","Vùng cao núi đá phía bắc nằm sát chí tuyến bắc, có độ dốc khá lớn, thung lũng và sông suối bị chia cắt nhiều. Nằm trong vùng khí hậu cận nhiệt đới ẩm nhưng do địa hình cao nên khí hậu nơi này mang nhiều sắc thái ôn đới.","Nam Hà","THIÊN NHIÊN"));
     }
 }
