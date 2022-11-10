@@ -1,16 +1,12 @@
 package com.example.vietcetara;
 
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import com.example.vietcetara.fragment.HomeFragment;
-import info.androidhive.fontawesome.FontTextView;
+import com.example.vietcetara.fragment.Home.HomeFragment;
+import com.example.vietcetara.fragment.Profile.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -18,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // load fragment
-        loadFragment(new HomeFragment());
+        loadFragment(new ProfileFragment());
         hideBar();
     }
 

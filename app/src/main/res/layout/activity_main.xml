@@ -22,14 +22,16 @@
             android:layout_height="0.8dp"
             android:background="#E8E8E8"
             />
+    \
     <LinearLayout
             android:orientation="horizontal"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:paddingBottom="26dp"
+            android:paddingBottom="10dp"
             android:id="@+id/menuBottom">
+
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
