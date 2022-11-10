@@ -2,13 +2,13 @@ package com.example.vietcetara.model;
 
 import java.io.Serializable;
 
-public class Post implements Serializable {
+public class Home implements Serializable {
     private String image;
     private String content;
     private String description;
     private String author;
 
-    public Post(String image, String content, String description, String author, String topic) {
+    public Home(String image, String content, String description, String author, String topic) {
         this.image = image;
         this.content = content;
         this.description = description;
@@ -16,7 +16,7 @@ public class Post implements Serializable {
         this.topic = topic;
     }
 
-    public Post() {
+    public Home() {
     }
 
     private String topic;

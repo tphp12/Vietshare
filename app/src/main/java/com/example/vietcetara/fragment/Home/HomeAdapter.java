@@ -1,4 +1,4 @@
-package com.example.vietcetara.adapter;
+package com.example.vietcetara.fragment.Home;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.vietcetara.R;
 import com.example.vietcetara.Utils;
-import com.example.vietcetara.model.Post;
+import com.example.vietcetara.model.Home;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
-public class PostAdapter extends RecyclerView.Adapter<PostAdapter.UserViewHolder> {
-    ArrayList<Post> lstPost;
+public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.UserViewHolder> {
+    ArrayList<Home> lstPost;
     Context context;
     UserCallback userCallback;
-    public PostAdapter(ArrayList<Post> lstPost, UserCallback userCallback) {
+    public HomeAdapter(ArrayList<Home> lstPost, UserCallback userCallback) {
         this.lstPost = lstPost;
         this.userCallback=userCallback;
     }
 
-    public PostAdapter(ArrayList<Post> lstPost) {
+    public HomeAdapter(ArrayList<Home> lstPost) {
         this.lstPost = lstPost;
     }
 
@@ -34,7 +34,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.UserViewHolder
     public UserViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
         context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
-        View homeView = inflater.inflate(R.layout.layout_home, parent, false);
+        View homeView = inflater.inflate(R.layout.item_home, parent, false);
         UserViewHolder viewHolder = new UserViewHolder(homeView);
 
         return viewHolder;
@@ -42,7 +42,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.UserViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull UserViewHolder holder, int position) {
-        Post item = lstPost.get(position);
+        Home item = lstPost.get(position);
 
         holder.imgPost.setImageBitmap(Utils.convertToBitMapFromAssets(context,item.getImage()));
         holder.txtContent.setText(item.getContent());
