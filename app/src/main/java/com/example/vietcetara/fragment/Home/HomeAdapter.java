@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.vietcetara.R;
 import com.example.vietcetara.Utils;
-import com.example.vietcetara.model.Home;
+import com.example.vietcetara.model.Post;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.UserViewHolder> {
-    ArrayList<Home> lstPost;
+    ArrayList<Post> lstPost;
     Context context;
     UserCallback userCallback;
-    public HomeAdapter(ArrayList<Home> lstPost, UserCallback userCallback) {
+    public HomeAdapter(ArrayList<Post> lstPost, UserCallback userCallback) {
         this.lstPost = lstPost;
         this.userCallback=userCallback;
     }
 
-    public HomeAdapter(ArrayList<Home> lstPost) {
+    public HomeAdapter(ArrayList<Post> lstPost) {
         this.lstPost = lstPost;
     }
 
@@ -42,10 +42,10 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.UserViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull UserViewHolder holder, int position) {
-        Home item = lstPost.get(position);
+        Post item = lstPost.get(position);
 
         holder.imgPost.setImageBitmap(Utils.convertToBitMapFromAssets(context,item.getImage()));
-        holder.txtContent.setText(item.getContent());
+        holder.txtContent.setText(item.getTitle());
         holder.txtDescription.setText(item.getDescription());
         holder.txtAuthor.setText(item.getAuthor());
         holder.txtTopic.setText(item.getTopic());

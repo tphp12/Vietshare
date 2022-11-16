@@ -6,77 +6,36 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
         tools:context=".MainActivity" android:background="@color/white" android:layout_gravity="bottom">
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingLeft="2dp"
-            android:paddingRight="2dp"
             android:layout_weight="1"
-
             android:id="@+id/mainFrame"/>
     <View
             android:layout_width="match_parent"
             android:layout_height="0.8dp"
             android:background="#E8E8E8"
             />
-    \
+
     <LinearLayout
             android:orientation="horizontal"
             android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:id="@+id/menuBottom">
+            android:layout_height="40dp">
 
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-            <info.androidhive.fontawesome.FontTextView
-                    android:layout_width="wrap_content"
-                    android:textColor="@color/green"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fa_home_solid"
-                    android:textSize="26sp"
-                    app:solid_icon="true"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            app:labelVisibilityMode="unlabeled"
+            android:id="@+id/navMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/mnbottom"
+            app:itemIconSize="30dp"
             />
-        </LinearLayout>
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-            <info.androidhive.fontawesome.FontTextView
-                    android:layout_width="wrap_content"
-                    android:textColor="#777"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fa_book_open_solid"
-                    android:textSize="26sp"
-                    app:solid_icon="true"
-            />
-        </LinearLayout>
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-            <info.androidhive.fontawesome.FontTextView
-                    android:layout_width="wrap_content"
-                    android:textColor="#777"
-                    android:id="@+id/userProfile"
-                    android:layout_height="match_parent"
-                    android:text="@string/fa_user"
-                    android:textSize="26sp"
-                    app:solid_icon="true"
-            />
-        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
