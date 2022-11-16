@@ -10,7 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.vietcetara.fragment.Home.HomeFragment;
-import com.example.vietcetara.fragment.Profile.SeriesFragment;
+import com.example.vietcetara.fragment.Profile.ProfileFragment;
+import com.example.vietcetara.fragment.Series.SeriesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -60,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.mnSeries:
                         tittle(item);
                         loadFragment(new SeriesFragment());
-
+                    case R.id.mnAccount:
+                        tittle(item);
+                        loadFragment(new ProfileFragment());
                         return true;
                 }
                 return true;
