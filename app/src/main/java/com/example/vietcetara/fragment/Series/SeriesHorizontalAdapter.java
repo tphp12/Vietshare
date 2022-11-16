@@ -1,4 +1,4 @@
-package com.example.vietcetara.fragment.Profile;
+package com.example.vietcetara.fragment.Series;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vietcetara.R;
 import com.example.vietcetara.Utils;
-import com.example.vietcetara.model.Post;
 import com.example.vietcetara.model.Series;
 
 import java.util.ArrayList;

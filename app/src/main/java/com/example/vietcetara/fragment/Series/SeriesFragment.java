@@ -1,4 +1,4 @@
-package com.example.vietcetara.fragment.Profile;
+package com.example.vietcetara.fragment.Series;
 
 import android.os.Bundle;
 
@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.vietcetara.R;
-import com.example.vietcetara.model.Post;
 import com.example.vietcetara.model.Series;
 
 import java.util.ArrayList;
