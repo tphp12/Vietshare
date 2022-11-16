@@ -1,27 +1,31 @@
 package com.example.vietcetara.model;
 
-public class Profile {
-    String image;
-    String title;
-    String description;
-    String numberOfPost;
+public class Series {
+    private String image;
+    private String title;
+    private String about;
+    private String numberOfPost;
 
-    public Profile(String image, String title, String description, String numberOfPost) {
+    public Series(String image, String title, String about, String numberOfPost) {
         this.image = image;
         this.title = title;
-        this.description = description;
+        this.about = about;
         this.numberOfPost = numberOfPost;
     }
 
-    public Profile(String image, String title, String numberOfPost) {
+    public Series(String image, String title, String numberOfPost) {
         this.image = image;
         this.title = title;
         this.numberOfPost = numberOfPost;
+    }
+
+    public Series() {
     }
 
     public String getImage() {
         return image;
     }
+
 
     public void setImage(String image) {
         this.image = image;
@@ -35,12 +39,12 @@ public class Profile {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getAbout() {
+        return about;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAbout(String about) {
+        this.about = about;
     }
 
     public String getNumberOfPost() {

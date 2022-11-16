@@ -11,7 +11,7 @@
         android:paddingBottom="20dp"
         >
         <ImageView
-            android:id="@+id/iv_profile_vertical"
+            android:id="@+id/iv_series_vertical"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
@@ -37,7 +37,7 @@
                 android:padding="5dp"
                 >
                 <TextView
-                    android:id="@+id/tv_profile_title_vertical"
+                    android:id="@+id/tv_series_title_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Title"
@@ -46,7 +46,7 @@
                     android:textSize="30sp"
                     android:layout_weight="3"/>
                 <FrameLayout
-                    android:id="@+id/fl_profile_next"
+                    android:id="@+id/fl_series_next"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
@@ -75,7 +75,7 @@
                 android:paddingBottom="5dp"
                 >
                 <TextView
-                    android:id="@+id/tv_profile_numberOfPost_vertical"
+                    android:id="@+id/tv_series_numberOfPost_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="000"
