@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.mnSeries:
                         tittle(item);
                         loadFragment(new SeriesFragment());
+                        return true;
                     case R.id.mnAccount:
                         tittle(item);
                         loadFragment(new ProfileFragment());
